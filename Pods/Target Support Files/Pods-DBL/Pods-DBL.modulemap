@@ -1,0 +1,6 @@
+framework module Pods_DBL {
+  umbrella header "Pods-DBL-umbrella.h"
+
+  export *
+  module * { export * }
+}

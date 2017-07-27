@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+target 'DBL' do
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'Firebase/Core'
+
+  inhibit_all_warnings!
+  use_frameworks!
+  pod 'GoogleAnalytics'
+
+end
+
