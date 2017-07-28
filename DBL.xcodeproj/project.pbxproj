@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1817D5C61F28A50800E19708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817D5C51F28A50800E19708 /* AppDelegate.swift */; };
-		1817D5C81F28A50800E19708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817D5C71F28A50800E19708 /* ViewController.swift */; };
 		1817D5CB1F28A50800E19708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817D5C91F28A50800E19708 /* Main.storyboard */; };
 		1817D5CD1F28A50800E19708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1817D5CC1F28A50800E19708 /* Assets.xcassets */; };
 		1817D5D01F28A50800E19708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817D5CE1F28A50800E19708 /* LaunchScreen.storyboard */; };
 		1817D5DB1F28A50900E19708 /* DBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817D5DA1F28A50900E19708 /* DBLTests.swift */; };
 		1817D5E61F28A50900E19708 /* DBLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817D5E51F28A50900E19708 /* DBLUITests.swift */; };
-		1817D5F51F28A5C200E19708 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817D5F41F28A5C200E19708 /* DataTableViewCell.swift */; };
+		1823D21C1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */; };
+		1823D21D1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */; };
+		1823D21E1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */; };
 		1855B4DC1F28C1AF00D92ADC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1855B4DB1F28C1AF00D92ADC /* GoogleService-Info.plist */; };
+		1889141E1F2B50ED00CD9083 /* Bullet-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 1889141B1F2B50EC00CD9083 /* Bullet-green.png */; };
+		1889141F1F2B50ED00CD9083 /* Bullet-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1889141C1F2B50ED00CD9083 /* Bullet-red.png */; };
+		188914201F2B50ED00CD9083 /* Bullet-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1889141D1F2B50ED00CD9083 /* Bullet-blue.png */; };
 		1E1A7DB61B9D9F2DAD38D15B /* Pods_DBL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C1466E0EC745F2F3E16E /* Pods_DBL.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +43,6 @@
 /* Begin PBXFileReference section */
 		1817D5C21F28A50800E19708 /* DBL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1817D5C51F28A50800E19708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1817D5C71F28A50800E19708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1817D5CA1F28A50800E19708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1817D5CC1F28A50800E19708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1817D5CF1F28A50800E19708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,8 +53,11 @@
 		1817D5E11F28A50900E19708 /* DBLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1817D5E51F28A50900E19708 /* DBLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLUITests.swift; sourceTree = "<group>"; };
 		1817D5E71F28A50900E19708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1817D5F41F28A5C200E19708 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		1855B4DB1F28C1AF00D92ADC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1889141B1F2B50EC00CD9083 /* Bullet-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet-green.png"; sourceTree = "<group>"; };
+		1889141C1F2B50ED00CD9083 /* Bullet-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet-red.png"; sourceTree = "<group>"; };
+		1889141D1F2B50ED00CD9083 /* Bullet-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet-blue.png"; sourceTree = "<group>"; };
 		4683F9A6664D9A8BE81676B2 /* Pods-DBL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBL/Pods-DBL.debug.xcconfig"; sourceTree = "<group>"; };
 		80D1EBF93D167D49B9842FFF /* Pods-DBL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBL.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBL/Pods-DBL.release.xcconfig"; sourceTree = "<group>"; };
 		D030C1466E0EC745F2F3E16E /* Pods_DBL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,13 +115,15 @@
 			isa = PBXGroup;
 			children = (
 				1817D5C51F28A50800E19708 /* AppDelegate.swift */,
-				1817D5C71F28A50800E19708 /* ViewController.swift */,
-				1817D5F41F28A5C200E19708 /* DataTableViewCell.swift */,
+				1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */,
 				1817D5C91F28A50800E19708 /* Main.storyboard */,
 				1817D5CC1F28A50800E19708 /* Assets.xcassets */,
 				1817D5CE1F28A50800E19708 /* LaunchScreen.storyboard */,
 				1855B4DB1F28C1AF00D92ADC /* GoogleService-Info.plist */,
 				1817D5D11F28A50800E19708 /* Info.plist */,
+				1889141D1F2B50ED00CD9083 /* Bullet-blue.png */,
+				1889141B1F2B50EC00CD9083 /* Bullet-green.png */,
+				1889141C1F2B50ED00CD9083 /* Bullet-red.png */,
 			);
 			path = DBL;
 			sourceTree = "<group>";
@@ -264,7 +272,10 @@
 			files = (
 				1817D5D01F28A50800E19708 /* LaunchScreen.storyboard in Resources */,
 				1855B4DC1F28C1AF00D92ADC /* GoogleService-Info.plist in Resources */,
+				1889141E1F2B50ED00CD9083 /* Bullet-green.png in Resources */,
+				1889141F1F2B50ED00CD9083 /* Bullet-red.png in Resources */,
 				1817D5CD1F28A50800E19708 /* Assets.xcassets in Resources */,
+				188914201F2B50ED00CD9083 /* Bullet-blue.png in Resources */,
 				1817D5CB1F28A50800E19708 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +349,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1817D5C81F28A50800E19708 /* ViewController.swift in Sources */,
-				1817D5F51F28A5C200E19708 /* DataTableViewCell.swift in Sources */,
 				1817D5C61F28A50800E19708 /* AppDelegate.swift in Sources */,
+				1823D21C1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1817D5DB1F28A50900E19708 /* DBLTests.swift in Sources */,
+				1823D21D1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1817D5E61F28A50900E19708 /* DBLUITests.swift in Sources */,
+				1823D21E1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
