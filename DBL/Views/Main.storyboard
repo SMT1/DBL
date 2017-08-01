@@ -37,6 +37,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="FBC-LB-H3P" id="Jyq-9J-ngC"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NARESH" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PU6-fU-We9">
                                         <rect key="frame" x="8" y="2" width="297" height="30"/>
@@ -44,6 +47,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="FBC-LB-H3P" id="fod-FK-ifn"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R48-g9-bgY">
                                         <rect key="frame" x="312" y="36" width="30" height="30"/>
@@ -167,14 +173,14 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="0.0" height="0.0"/>
                     <connections>
+                        <outlet property="DestinationLocationTxtFld" destination="k5A-6p-PYM" id="gMZ-Jq-5nh"/>
                         <outlet property="btn" destination="R48-g9-bgY" id="nTN-Ml-nbM"/>
                         <outlet property="btn2" destination="sKE-cg-3II" id="DXP-8O-YeW"/>
+                        <outlet property="currentLocationTxtFld" destination="PU6-fU-We9" id="Pna-8K-jiE"/>
                         <outlet property="headerHeightConstraint" destination="jDl-D9-wlf" id="GIb-s3-XLs"/>
                         <outlet property="headerView" destination="LJw-uK-Zf5" id="Due-G1-aes"/>
                         <outlet property="mapView" destination="X8q-Hb-NJB" id="DbR-5w-7Ml"/>
                         <outlet property="tableView" destination="238-10-GHT" id="1xq-1C-2qN"/>
-                        <outlet property="txtFld" destination="k5A-6p-PYM" id="m8l-KC-rMs"/>
-                        <outlet property="txtFld1" destination="PU6-fU-We9" id="hsA-fb-PcM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cth-iQ-7T2" sceneMemberID="firstResponder"/>
