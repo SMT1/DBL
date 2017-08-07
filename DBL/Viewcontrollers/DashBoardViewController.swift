@@ -82,6 +82,18 @@ class DashBoardViewController: UIViewController,UITextFieldDelegate {
         marker1.iconView = imageViewForPinMarker1
         marker1.map = mapView
         
+        
+
+        let circle = GMSCircle()
+        circle.radius = 500 // Meters
+        circle.fillColor = UIColor (red: 90.0/255.0, green: 200.0/255.0, blue: 255/255.0, alpha: 0.5)
+        circle.position = marker1.position // Your CLLocationCoordinate2D  position
+        circle.strokeWidth = 1.5;
+        circle.strokeColor = UIColor.lightGray
+        circle.map = mapView; // Add it to the map
+
+        
+        
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: 17.454160, longitude: 78.512306)
         marker.title = "1E From:Sec To:E Marredpally"
@@ -108,6 +120,17 @@ class DashBoardViewController: UIViewController,UITextFieldDelegate {
             print("b: \(storeDistance)")
             marker.snippet = String(format:"%@km", storeDistance)
             
+            
+            var orginCordinates = CLLocationCoordinate2D()
+            orginCordinates.latitude=marker1.position.latitude
+            orginCordinates.longitude=marker1.position.longitude
+            
+            var destinationCordinates = CLLocationCoordinate2D()
+            destinationCordinates.latitude=marker.position.latitude
+            destinationCordinates.longitude=marker.position.longitude
+            
+            getPolylineRoute(from: orginCordinates, to: destinationCordinates)
+
 
 //            milesToKilometers(speedInMPH: distanceInMeters)
         }
@@ -116,6 +139,13 @@ class DashBoardViewController: UIViewController,UITextFieldDelegate {
             print("%@",distanceInMeters)
         }
     }
+//    func mapView(mapView: GMSMapView!, rendererForOverlay overlay: GMSOverlay!) ->  GMSGroundOverlay! {
+//        var overlayRenderer : GMSCircleRenderer GMSCir= MKCircleRenderer(overlay: overlay);
+//        overlayRenderer.lineWidth = 1.0
+//        overlayRenderer.strokeColor = UIColor.redColor()
+//        return overlayRenderer
+//    }
+
 //@discardableResult func milesToKilometers(speedInMPH:Double) ->Double
 //    {
 //        let speedInKPH = (speedInMPH / 1000)
@@ -271,7 +301,8 @@ extension DashBoardViewController: GMSAutocompleteViewControllerDelegate {
                             let path = GMSMutablePath(fromEncodedPath: overViewPolyLine as! String)
                             /* set up poly line */
                             let polyline = GMSPolyline.init(path: path)
-                            polyline.strokeWidth = 2
+                            polyline.strokeWidth = 5
+                            polyline.strokeColor=UIColor (red: 90.0/255.0, green: 200.0/255.0, blue: 255/255.0, alpha: 1.0)
                             polyline.map = self.mapView
                         }
                     }
