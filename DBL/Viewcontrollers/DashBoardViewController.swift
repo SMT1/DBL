@@ -26,6 +26,7 @@ class DashBoardViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var btn2: UIButton!
     
     var storeTxtFld = NSString();
+    var storeDistance = NSString();
     var Sourcelatitutde = CLLocationDegrees();
     var Sourcelongitude = CLLocationDegrees();
     var Destinationlatitutde = CLLocationDegrees();
@@ -36,26 +37,95 @@ class DashBoardViewController: UIViewController,UITextFieldDelegate {
     
     
     
-    let maxHeaderHeight: CGFloat = 319;
+    let maxHeaderHeight: CGFloat = 438;
     let minHeaderHeight: CGFloat = 46;
     var previousScrollOffset: CGFloat = 0;
-    var busName: [String] = ["We", "Heart", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift", "Swift"]
-    var busNearBy: [String] = ["Shinnoy", "Mettuguda", "Secunderabad"]
-    var busKM: [String] = ["0.2", "2.5", "3.0"]
+    var busName: [String] = ["1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally", "1E From:Sec To:E Marredpally",]
+//    var busNearBy: [String] = ["Shinnoy", "Mettuguda", "Secunderabad"]
+//    var busKM: [String] = ["0.2", "2.5", "3.0"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.camera=GMSCameraPosition.camera(withLatitude: 17.447979, longitude: 78.507915, zoom: 5.5)
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 17.447979, longitude: 78.507915)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+        
+        
+        mapView.camera=GMSCameraPosition.camera(withLatitude: 17.447979, longitude: 78.507915, zoom: 14.5)
+
+        
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2D(latitude: 17.442793, longitude: 78.505700)
+        marker2.title = "Teachers Colony,Entrenchment Rd"
+        marker2.snippet = "Secunderabad"
+        
+        //Creating Marker Pin imageview for Custom Marker
+        var imageViewForPinMarker2 : UIImageView
+        imageViewForPinMarker2  = UIImageView(frame:CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 25, height: 25)) );
+        imageViewForPinMarker2.image = UIImage(named:"bus3")
+        marker2.iconView = imageViewForPinMarker2
+        marker2.map = mapView
+
+        createMarker()
     btn.addTarget(self, action: #selector(buttonAction(sender:)), for: .touchUpInside)
-        
-        
 // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    func createMarker()
+    {
+        let marker1 = GMSMarker()
+        marker1.position = CLLocationCoordinate2D(latitude: 17.447360, longitude: 78.509043)
+        marker1.title = "Current Postion"
+        marker1.snippet = "E Maredpally,Secunderabad"
+        //Creating Marker Pin imageview for Custom Marker
+        var imageViewForPinMarker1 : UIImageView
+        imageViewForPinMarker1  = UIImageView(frame:CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 25, height: 25)) );
+        imageViewForPinMarker1.image = UIImage(named:"current")
+        marker1.iconView = imageViewForPinMarker1
+        marker1.map = mapView
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 17.454160, longitude: 78.512306)
+        marker.title = "1E From:Sec To:E Marredpally"
+
+        //Creating Marker Pin imageview for Custom Marker
+        var imageViewForPinMarker : UIImageView
+        imageViewForPinMarker  = UIImageView(frame:CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 25, height: 25)) );
+        imageViewForPinMarker.image = UIImage(named:"bus1")
+        marker.iconView = imageViewForPinMarker
+        marker.map = mapView
+        
+        
+        let coordinate₀ = CLLocation(latitude:marker.position.latitude, longitude: marker.position.longitude)
+        let coordinate₁ = CLLocation(latitude: marker1.position.latitude, longitude: marker1.position.longitude)
+        let distanceInMeters = coordinate₀.distance(from: coordinate₁)
+        if(distanceInMeters <= 1609)
+        {
+            print("%@",distanceInMeters)
+            
+            let speedInMPH = Double(distanceInMeters)
+            let speedInKPH = (speedInMPH / 1000)
+            print("%@",speedInKPH as Double)
+            storeDistance=String(format:"%.1f", speedInKPH) as NSString;
+            print("b: \(storeDistance)")
+            marker.snippet = String(format:"%@km", storeDistance)
+            
+
+//            milesToKilometers(speedInMPH: distanceInMeters)
+        }
+        else
+        {
+            print("%@",distanceInMeters)
+        }
+    }
+//@discardableResult func milesToKilometers(speedInMPH:Double) ->Double
+//    {
+//        let speedInKPH = (speedInMPH / 1000)
+//        print("%@",speedInKPH as Double)
+//        storeDistance=String(format:"%f", speedInKPH) as NSString;
+//        print("b: \(storeDistance)")
+//        createMarker()
+//        return speedInKPH as Double
+//    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.headerHeightConstraint.constant = self.maxHeaderHeight

@@ -11,6 +11,7 @@
 		1817D5D01F28A50800E19708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817D5CE1F28A50800E19708 /* LaunchScreen.storyboard */; };
 		1817D5DB1F28A50900E19708 /* DBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817D5DA1F28A50900E19708 /* DBLTests.swift */; };
 		1817D5E61F28A50900E19708 /* DBLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817D5E51F28A50900E19708 /* DBLUITests.swift */; };
+		18207C051F38356D00A16B40 /* current.png in Resources */ = {isa = PBXBuildFile; fileRef = 18207C041F38356D00A16B40 /* current.png */; };
 		1823D21C1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */; };
 		1823D21D1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */; };
 		1823D21E1F2B66C3001C18F1 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */; };
@@ -18,6 +19,9 @@
 		1823D2291F2B6B07001C18F1 /* Bullet-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1823D2261F2B6B07001C18F1 /* Bullet-blue.png */; };
 		1823D22A1F2B6B07001C18F1 /* Bullet-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 1823D2271F2B6B07001C18F1 /* Bullet-green.png */; };
 		1855B4DC1F28C1AF00D92ADC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1855B4DB1F28C1AF00D92ADC /* GoogleService-Info.plist */; };
+		187796231F319086001E2930 /* bus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1877961F1F319085001E2930 /* bus2.png */; };
+		187796241F319086001E2930 /* bus1.png in Resources */ = {isa = PBXBuildFile; fileRef = 187796201F319085001E2930 /* bus1.png */; };
+		187796251F319086001E2930 /* bus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 187796211F319086001E2930 /* bus3.png */; };
 		187E4FD21F304B540042CDBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E4FD11F304A4D0042CDBD /* Main.storyboard */; };
 		1E1A7DB61B9D9F2DAD38D15B /* Pods_DBL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C1466E0EC745F2F3E16E /* Pods_DBL.framework */; };
 /* End PBXBuildFile section */
@@ -50,12 +54,16 @@
 		1817D5E11F28A50900E19708 /* DBLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1817D5E51F28A50900E19708 /* DBLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLUITests.swift; sourceTree = "<group>"; };
 		1817D5E71F28A50900E19708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18207C041F38356D00A16B40 /* current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = current.png; path = ../../../.Trash/current.png; sourceTree = "<group>"; };
 		1823D21B1F2B66C3001C18F1 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		1823D2251F2B6B07001C18F1 /* Bullet-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bullet-red.png"; path = "../../../.Trash/Bullet-red.png"; sourceTree = "<group>"; };
 		1823D2261F2B6B07001C18F1 /* Bullet-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bullet-blue.png"; path = "../../../.Trash/Bullet-blue.png"; sourceTree = "<group>"; };
 		1823D2271F2B6B07001C18F1 /* Bullet-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bullet-green.png"; path = "../../../.Trash/Bullet-green.png"; sourceTree = "<group>"; };
 		182851FC1F30488D00851758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1855B4DB1F28C1AF00D92ADC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1877961F1F319085001E2930 /* bus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus2.png; path = ../../../Downloads/bus2.png; sourceTree = "<group>"; };
+		187796201F319085001E2930 /* bus1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus1.png; path = ../../../Downloads/bus1.png; sourceTree = "<group>"; };
+		187796211F319086001E2930 /* bus3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus3.png; path = ../../../Downloads/bus3.png; sourceTree = "<group>"; };
 		187E4FD11F304A4D0042CDBD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4683F9A6664D9A8BE81676B2 /* Pods-DBL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBL/Pods-DBL.debug.xcconfig"; sourceTree = "<group>"; };
 		80D1EBF93D167D49B9842FFF /* Pods-DBL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBL.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBL/Pods-DBL.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,9 +125,13 @@
 				18EC39C31F30482400A35CEA /* Views */,
 				1855B4DB1F28C1AF00D92ADC /* GoogleService-Info.plist */,
 				1817D5D11F28A50800E19708 /* Info.plist */,
+				18207C041F38356D00A16B40 /* current.png */,
 				1823D2261F2B6B07001C18F1 /* Bullet-blue.png */,
 				1823D2271F2B6B07001C18F1 /* Bullet-green.png */,
 				1823D2251F2B6B07001C18F1 /* Bullet-red.png */,
+				187796201F319085001E2930 /* bus1.png */,
+				1877961F1F319085001E2930 /* bus2.png */,
+				187796211F319086001E2930 /* bus3.png */,
 			);
 			path = DBL;
 			sourceTree = "<group>";
@@ -286,11 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1817D5D01F28A50800E19708 /* LaunchScreen.storyboard in Resources */,
+				187796241F319086001E2930 /* bus1.png in Resources */,
 				1823D22A1F2B6B07001C18F1 /* Bullet-green.png in Resources */,
 				1855B4DC1F28C1AF00D92ADC /* GoogleService-Info.plist in Resources */,
 				187E4FD21F304B540042CDBD /* Main.storyboard in Resources */,
+				187796251F319086001E2930 /* bus3.png in Resources */,
 				1823D2281F2B6B07001C18F1 /* Bullet-red.png in Resources */,
 				1823D2291F2B6B07001C18F1 /* Bullet-blue.png in Resources */,
+				187796231F319086001E2930 /* bus2.png in Resources */,
+				18207C051F38356D00A16B40 /* current.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
